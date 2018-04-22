@@ -10,7 +10,12 @@
                               <?php foreach($categories as  $categoryItem):?>  
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h4 class="panel-title"><a href="/mvcshop/category/<?=$categoryItem["id"]?>"><?=$categoryItem["name"]?></a></h4>
+                                        <h4 class="panel-title">
+                                            <a href="/mvcshop/category/<?=$categoryItem["id"]?>"
+                                               <?php if($categoryItem["id"] == $categoryId) echo 'active';?>>
+                                                          <?=$categoryItem["name"]?>
+                                            </a>
+                                        </h4>
                                     </div>
                                 </div>
                                <?php endforeach;?>
@@ -22,7 +27,7 @@
                     <div class="col-sm-9 padding-right">
                         <div class="features_items"><!--features_items-->
                             <h2 class="title text-center">Последние товары</h2>
-                           <?php foreach($latestProducts as $product):?> 
+                           <?php foreach($categoryProducts as $product):?> 
                             <div class="col-sm-4">
                                 <div class="product-image-wrapper">
                                     <div class="single-products">

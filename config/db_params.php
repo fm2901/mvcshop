@@ -1,6 +1,6 @@
 <?php
 	return array("host" => "localhost",
-				 "dbname" => "phpmvc",
+				 "dbname" => "mvcshop",
 				 "user" => "root",
 				 "password" => "",
 				 );
