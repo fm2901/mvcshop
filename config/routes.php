@@ -8,6 +8,9 @@
             
             "mvcshop/cart/add/([0-9]+)" => "cart/add/$1",
             
+            "mvcshop/cart/addAjax/([0-9]+)" => "cart/addAjax/$1",
+            "mvcshop/cart" => "cart/index",
+            
             "mvcshop/user/register" => "user/register",
             "mvcshop/user/login" => "user/login",
             "mvcshop/user/logout" => "user/logout",
