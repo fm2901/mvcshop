@@ -37,7 +37,7 @@
                                             <a href="/mvcshop/product/<?=$product['id'];?>">
                                                 <p><?=$product['name'];?></p>
                                             </a> 
-                                            <a href="/mvcshop/product/<?=$product['id'];?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                            <a href="/mvcshop/cart/add/<?=$product['id'];?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                         </div>
                                         <?php if($product["is_new"]):?>
                                             <img src="/mvcshop/template/images/home/new.png" class="new" alt="" />

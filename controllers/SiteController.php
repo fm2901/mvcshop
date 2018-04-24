@@ -14,5 +14,33 @@ class SiteController
 		
 		return true;
 	}
+        
+        public function actionContact()
+        {
+           $userEmail = '';
+           $userText = '';
+           $result = false;
+            if(isset($_POST['submit']))
+            {
+              
+               $userEmail = $_POST['userEmail'];
+               $userText = $_POST['userText']; 
+               $errors = false;
+               
+               if(!User::checkEmail($userEmail)){
+                   $errors[] = 'Неправильный email';
+               }
+               if($errors == false){
+                    $mail = 'm.fayziev@eskhata.tj';
+                    $subject = 'Тема письма';
+                    $message = 'Содержание письма';
+                    $result = true;
+               }
+            }
+            
+            require_once(ROOT."/views/site/contact.php");
+		
+            return true;
+        }
 }
 ?>
