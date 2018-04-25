@@ -32,7 +32,7 @@
                                             <a href="/mvcshop/product/<?=$product['id'];?>">
                                                 <p><?=$product['name'];?></p>
                                             </a> 
-                                            <a href="/mvcshop/product/<?=$product['id'];?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                            <a href="/mvcshop/cart/add/<?=$product['id'];?>" data-id="<?=$product['id'];?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                         </div>
                                         <?php if($product["is_new"]):?>
                                             <img src="/mvcshop/template/images/home/new.png" class="new" alt="" />
@@ -57,7 +57,7 @@
                                                         <img src="/mvcshop/template/images/home/recommend1.jpg" alt="" />
                                                         <h2>$56</h2>
                                                         <p>Easy Polo Black Edition</p>
-                                                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                                                        <a href="/mvcshop/cart/add" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                                     </div>
 
                                                 </div>

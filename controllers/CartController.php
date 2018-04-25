@@ -4,7 +4,7 @@
 class CartController {
     public function actionIndex()
     {
-        $categories = false;
+        $categories = array();
         $categories = Product::getCategoriesList();
         $productsInCart = false;
         $productsInCart = Cart::getProducts();

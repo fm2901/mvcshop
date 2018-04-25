@@ -78,7 +78,7 @@ class Product
         $sql = 'SELECT id,name FROM category WHERE status=1';
         $result = $db->query($sql);
         while($row = $result->fetch()){
-            $categories[$row['id']] = $row['name'];
+            $categories[$row['id']] = $row;
         }
         return $categories;
     }
